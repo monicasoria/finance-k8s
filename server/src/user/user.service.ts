@@ -16,4 +16,10 @@ export class UserService {
     async getAllUsers(): Promise<User[]>  {
         return await this.userRepository.getAllUsers();
     }
+    async updateUser(updateUserDto: UserInsertionDto) {
+        return await this.userRepository.updateUser(updateUserDto);
+    }
+    async deleteUserById(userId: number){
+        return await this.userRepository.deleteUserById(userId);
+    };
 }

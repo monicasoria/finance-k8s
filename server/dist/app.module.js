@@ -33,7 +33,6 @@ AppModule = __decorate([
                     password: configService.get("database.password"),
                     database: configService.get("database.dbName"),
                     entities: ["dist/**/*.entity{.ts,.js}"],
-                    synchronize: true
                 }),
                 inject: [config_1.ConfigService]
             }),

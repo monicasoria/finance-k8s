@@ -34,6 +34,12 @@ let UserRepository = class UserRepository extends typeorm_1.Repository {
             .getMany();
         return users;
     }
+    async updateUser(updateUserDto) {
+        return await this.save(updateUserDto);
+    }
+    async deleteUserById(userId) {
+        return await this.delete(userId);
+    }
 };
 UserRepository = __decorate([
     typeorm_1.EntityRepository(user_entity_1.User)
