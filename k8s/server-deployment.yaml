@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: server
-          image: davidsantander/multi-server
+          image: davidsantander/finance-k8s-server
           ports:
             - containerPort: 5000
           env:
@@ -30,5 +30,5 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: pgpassword
-                  key:  DATABASE_PASSWORD
+                  key: DATABASE_PASSWORD
             
