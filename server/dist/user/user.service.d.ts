@@ -6,4 +6,6 @@ export declare class UserService {
     constructor(userRepository: UserRepository);
     insertUser(userInsertionDto: UserInsertionDto): Promise<User>;
     getAllUsers(): Promise<User[]>;
+    updateUser(updateUserDto: UserInsertionDto): Promise<User>;
+    deleteUserById(userId: number): Promise<import("typeorm").DeleteResult>;
 }

@@ -25,6 +25,13 @@ let UserController = class UserController {
     async getAllUsers() {
         return await this.userService.getAllUsers();
     }
+    async updateUser(userUpdateDto) {
+        console.log("UserController -> constructor -> userUpdateDto", userUpdateDto);
+        return await this.userService.updateUser(userUpdateDto);
+    }
+    async deleteUserById(userId) {
+        return await this.userService.deleteUserById(userId);
+    }
 };
 __decorate([
     common_1.Post("insert"),
@@ -39,6 +46,20 @@ __decorate([
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", Promise)
 ], UserController.prototype, "getAllUsers", null);
+__decorate([
+    common_1.Put('update'),
+    __param(0, common_1.Body()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [user_insertion_dto_1.UserInsertionDto]),
+    __metadata("design:returntype", Promise)
+], UserController.prototype, "updateUser", null);
+__decorate([
+    common_1.Delete('/delete-by-id/:id'),
+    __param(0, common_1.Param('id')),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Number]),
+    __metadata("design:returntype", Promise)
+], UserController.prototype, "deleteUserById", null);
 UserController = __decorate([
     common_1.Controller('user'),
     __metadata("design:paramtypes", [user_service_1.UserService])

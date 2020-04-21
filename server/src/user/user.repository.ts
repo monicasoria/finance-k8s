@@ -1,4 +1,4 @@
-import { Repository, EntityRepository } from "typeorm";
+import { Repository, EntityRepository, DeleteResult } from "typeorm";
 import { User } from "./user.entity";
 import { UserInsertionDto } from "./user-insertion.dto";
 import { Logger } from "@nestjs/common";
@@ -24,5 +24,11 @@ export class UserRepository extends Repository<User> {
       const users: User[] = await this.createQueryBuilder("allUsers")
         .getMany();
       return users;
+    }
+    async updateUser(updateUserDto: UserInsertionDto): Promise<User> {
+      return await this.save(updateUserDto);
+    }
+    async deleteUserById(userId: number): Promise<DeleteResult> {
+        return await this.delete(userId);
     }
 }

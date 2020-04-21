@@ -106,6 +106,11 @@
           title: 'user',
           to: '/pages/user',
         },
+                {
+          icon: 'mdi-account',
+          title: 'Users',
+          to: '/pages/users',
+        },
       ],
     }),
 
