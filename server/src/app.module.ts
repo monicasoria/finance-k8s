@@ -1,3 +1,4 @@
+import { KickstarterModule } from "./kickstarter/kickstarter.module";
 import { Module } from "@nestjs/common";
 import { AppController } from "./app.controller";
 import { AppService } from "./app.service";
@@ -28,7 +29,8 @@ import databaseConfig from "./config/database.config";
       inject: [ConfigService]
     }),
     WorkerModule,
-    UserModule
+    UserModule,
+    KickstarterModule
   ],
   controllers: [AppController],
   providers: [AppService]
