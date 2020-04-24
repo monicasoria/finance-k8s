@@ -21,7 +21,7 @@ before_install:
   - gcloud auth activate-service-account --key-file service-account.json
   - gcloud config set project finance-k8s
   - gcloud config set compute/zone us-central1-c
-  - gcloud container clusters get-credentials finance-cluster
+  - gcloud container clusters get-credentials --zone us-central1-c finance-cluster
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker build -t davidsantander/finance-k8s-test -f ./client/Dockerfile.dev ./client
 
@@ -32,4 +32,4 @@ deploy:
   provider: script
   script: bash ./deploy.sh
   on:
-    branch: master
+    branch: master 
