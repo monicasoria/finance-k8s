@@ -7,10 +7,13 @@ import { TypeOrmModule } from "@nestjs/typeorm";
 import { UserModule } from './user/user.module';
 import { KickstarterModule } from './kickstarter/kickstarter.module';
 import databaseConfig from "./config/database.config";
+import { MulterModule } from "@nestjs/platform-express";
 @Module({
   imports: [
+    MulterModule.register({
+      dest: "/upload",
+    }),
     ConfigModule.forRoot({
-      // envFilePath: ".development.env",
       isGlobal: true,
       load: [databaseConfig]
     }),
