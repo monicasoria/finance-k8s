@@ -7,15 +7,15 @@ import {
 
 @Entity()
 export class User extends BaseEntity {
-  @PrimaryGeneratedColumn()
+  @PrimaryGeneratedColumn({ name: "ID", type: "int" })
   id: number;
 
-  @Column()
+  @Column({ name: "first_name", type: "varchar" })
   firstName: string;
 
-  @Column()
+  @Column({ name: "last_name", type: "varchar" })
   lastName: string;
 
-  @Column({ default: true })
+  @Column({ name: "is_active", type: "boolean", default: true })
   isActive: boolean;
 }

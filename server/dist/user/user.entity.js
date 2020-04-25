@@ -13,19 +13,19 @@ const typeorm_1 = require("typeorm");
 let User = class User extends typeorm_1.BaseEntity {
 };
 __decorate([
-    typeorm_1.PrimaryGeneratedColumn(),
+    typeorm_1.PrimaryGeneratedColumn({ name: "ID", type: "int" }),
     __metadata("design:type", Number)
 ], User.prototype, "id", void 0);
 __decorate([
-    typeorm_1.Column(),
+    typeorm_1.Column({ name: "first_name", type: "varchar" }),
     __metadata("design:type", String)
 ], User.prototype, "firstName", void 0);
 __decorate([
-    typeorm_1.Column(),
+    typeorm_1.Column({ name: "last_name", type: "varchar" }),
     __metadata("design:type", String)
 ], User.prototype, "lastName", void 0);
 __decorate([
-    typeorm_1.Column({ default: true }),
+    typeorm_1.Column({ name: "is_active", type: "boolean", default: true }),
     __metadata("design:type", Boolean)
 ], User.prototype, "isActive", void 0);
 User = __decorate([

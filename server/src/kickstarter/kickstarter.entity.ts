@@ -1,7 +1,6 @@
 import { 
   Entity,
   Column,
-  PrimaryGeneratedColumn, 
   BaseEntity, 
   PrimaryColumn
 } from "typeorm";
@@ -26,7 +25,7 @@ export class Kickstarter extends BaseEntity {
   @Column({ name: "deadline" , type: "date" })
   deadline: Date;
 
-  @Column({ name: "goal", type:"float" })
+  @Column({ name: "goal", type: "float" })
   goal: number;
 
   @Column({ name: "launched" , type: "date" })
@@ -52,5 +51,4 @@ export class Kickstarter extends BaseEntity {
 
   @Column({ name: "usd_goal_real", type:"float" })
   usdGoalReal: number;
-
 }

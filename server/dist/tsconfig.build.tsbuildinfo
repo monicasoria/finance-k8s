@@ -558,12 +558,8 @@
         "signature": "adc6974bb6588dfecba07e0384031c4b6569871db22597e3bd2e2caf8c0501db"
       },
       "../node_modules/@types/node/globals.d.ts": {
-        "version": "b27742236b2f00cf88316d766b6db203307d6523fd5a92f390ec6526901309dd",
-        "signature": "b27742236b2f00cf88316d766b6db203307d6523fd5a92f390ec6526901309dd"
-      },
-      "../node_modules/@types/node/assert.d.ts": {
-        "version": "021b431b8f3869ebb9798b939ddbe637e341afa76d547fb507f3b1ece06a22cb",
-        "signature": "021b431b8f3869ebb9798b939ddbe637e341afa76d547fb507f3b1ece06a22cb"
+        "version": "9d0b32c595a2e0d320a56b3d0e8f0a317e4149239ec913aa8f11eeb73edc92be",
+        "signature": "9d0b32c595a2e0d320a56b3d0e8f0a317e4149239ec913aa8f11eeb73edc92be"
       },
       "../node_modules/@types/node/async_hooks.d.ts": {
         "version": "96e547b51f95ee76bdb25731c92420fa6f93b59c3f38f23d505be36e2de394ee",
@@ -574,8 +570,8 @@
         "signature": "61215c1a376bbe8f51cab4cc4ddbf3746387015113c37a84d981d4738c21b878"
       },
       "../node_modules/@types/node/child_process.d.ts": {
-        "version": "1a188fb2574b32f9be13a8d112abea25914032ee51b66bfa6fc3241c81e5394f",
-        "signature": "1a188fb2574b32f9be13a8d112abea25914032ee51b66bfa6fc3241c81e5394f"
+        "version": "3ca89ecb953fe3b63dae41e5bb986506e812754dde0369c5fe61de26eff47dbe",
+        "signature": "3ca89ecb953fe3b63dae41e5bb986506e812754dde0369c5fe61de26eff47dbe"
       },
       "../node_modules/@types/node/cluster.d.ts": {
         "version": "123ec69e4b3a686eb49afd94ebe3292a5c84a867ecbcb6bb84bdd720a12af803",
@@ -718,8 +714,8 @@
         "signature": "f409183966a1dd93d3a9cd1d54fbeb85c73101e87cd5b19467c5e37b252f3fd8"
       },
       "../node_modules/@types/node/base.d.ts": {
-        "version": "6622f76993bdfeaacb947ba7c4cf26f2e5c5194194d02d792c3cba4174cd8fce",
-        "signature": "6622f76993bdfeaacb947ba7c4cf26f2e5c5194194d02d792c3cba4174cd8fce"
+        "version": "5ff4ecfd544d596de3c8011a6d44c59443c85e1f99065095e556b15237eb39ac",
+        "signature": "5ff4ecfd544d596de3c8011a6d44c59443c85e1f99065095e556b15237eb39ac"
       },
       "../node_modules/@types/node/ts3.2/fs.d.ts": {
         "version": "12b2608d6074167c331c9c3c6994a57819f6ff934c7fd4527e23aabf56d4c8d1",
@@ -733,9 +729,17 @@
         "version": "4926e99d2ad39c0bbd36f2d37cc8f52756bc7a5661ad7b12815df871a4b07ba1",
         "signature": "4926e99d2ad39c0bbd36f2d37cc8f52756bc7a5661ad7b12815df871a4b07ba1"
       },
+      "../node_modules/@types/node/ts3.2/base.d.ts": {
+        "version": "8a70903bbbdad1d58e3936ca90b3ad993e54827ea324e20f2f63cef4e14e9d55",
+        "signature": "8a70903bbbdad1d58e3936ca90b3ad993e54827ea324e20f2f63cef4e14e9d55"
+      },
+      "../node_modules/@types/node/assert.d.ts": {
+        "version": "f61a4062a627acbe5c4a9650319132ec8fa7fe2f276a7f40a056e59c2a877e04",
+        "signature": "f61a4062a627acbe5c4a9650319132ec8fa7fe2f276a7f40a056e59c2a877e04"
+      },
       "../node_modules/@types/node/ts3.2/index.d.ts": {
-        "version": "6e19418b881b57998d218487d41d85534c7fa5ab329bbc72afe571e7683d774a",
-        "signature": "6e19418b881b57998d218487d41d85534c7fa5ab329bbc72afe571e7683d774a"
+        "version": "9522f3e35b412f2f17974b1431a1b18d06e0a8f614a0700c37220a4afb04afa8",
+        "signature": "9522f3e35b412f2f17974b1431a1b18d06e0a8f614a0700c37220a4afb04afa8"
       },
       "../node_modules/@nestjs/common/interfaces/external/kafka-options.interface.d.ts": {
         "version": "5a080d2463f22e718b800cf3ab89bec9d3dd9ae98b8caf7a133586bed506c4b6",
@@ -2202,7 +2206,7 @@
         "signature": "9adc71c6ea620fde35cc7061fd1797be7319619f6adb576df48658809acd5441"
       },
       "../src/user/user.entity.ts": {
-        "version": "68dae3b81ee1ff6e695b53a737cc16659166343f0ccf31ba097c13250d8e1e9f",
+        "version": "215b61b74e3d54c3c6dc3c76403a42706222e3389c743e4128ae668a74dd9447",
         "signature": "793d9b2bf6d6b7c48432f04b8a4b15c26a5149f32719313fca7b2a9beffeb574"
       },
       "../src/user/user.repository.ts": {
@@ -2221,12 +2225,24 @@
         "version": "f6c25fc68a8f3b529e82492cea61305fb28d7afa98fad713ba312ffb7eaee7d1",
         "signature": "482b8f0d35a3d453500a15b6c6057c1e4c40baa4329b39da9e1026d8e1de4329"
       },
+      "../src/kickstarter/kickstarter.controller.ts": {
+        "version": "96d4918116029732e9b0aef54ac8931f645b8d5ec7c810d657b2a5b935d91c47",
+        "signature": "516a888a561aea27d164bd8af604175f8f9a853e3fa5da809fc10602e9e9a06d"
+      },
+      "../src/kickstarter/kickstarter.service.ts": {
+        "version": "34da9ffbd13adf0e436f23ac07180be8fcd5df5ca45e3aca198e084606b9b447",
+        "signature": "2dcf5504fbd5e3f0f6b53be3d29518520317a5244dddce1252e6a836cdb7a4bf"
+      },
+      "../src/kickstarter/kickstarter.module.ts": {
+        "version": "ed23223a09724702da814c93470214b94a9314ffc3653f43014318c113cec427",
+        "signature": "dfc71d1e6a9c7699dbc1345366bbd3e35254ae372bc5121db4b502bf94bee0ee"
+      },
       "../src/config/database.config.ts": {
         "version": "418f764adb8ef9139e7a07a51f4923c01298e8977f315d576765edd13a9ffc67",
         "signature": "13c424224a643c328578b3e5d7de8087746fbae6b44d12d578f88068018e3372"
       },
       "../src/app.module.ts": {
-        "version": "3a5bcc6eb7f45fc434bd589564821e400a32af0ecba4b929d8b09037aa8fe87a",
+        "version": "22eaf43dd02d3be28c5f7ab2021ad1eed9d4a373bf6056a4ec370523314f7ff8",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644"
       },
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts": {
@@ -2376,6 +2392,14 @@
       "../src/main.ts": {
         "version": "f7f2360ed9eca40b9adf18ff7902514c63c5dde2d0ed0b07eea901d59ad99a18",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+      },
+      "../src/kickstarter/kickstarter.entity.ts": {
+        "version": "2767569c0d4dddb62b8890eb8c2b3fd57c3ed13b4007ce407049ebbc021f9adf",
+        "signature": "57b70f0c584609e965815a43f34892938c2b96a52005c5df2013e10776230d49"
+      },
+      "../src/kickstarter/kickstarter.repository.ts": {
+        "version": "0ce5832189b992960598af2b8e5f46f644a143ca2bb420cbe2a81c810ccb4abf",
+        "signature": "b5feed0911b352664aafc0cecaf00c6e99125d8df213608fb9e2bbda680ada44"
       },
       "../node_modules/@types/anymatch/index.d.ts": {
         "version": "48b52264fa193879a074197839dbb4796fa07e86350ff888e5361e06aa46df76",
@@ -3625,12 +3649,6 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@types/node/assert.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "../node_modules/@types/node/async_hooks.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -3913,7 +3931,6 @@
       ],
       "../node_modules/@types/node/base.d.ts": [
         "../node_modules/@types/node/globals.d.ts",
-        "../node_modules/@types/node/assert.d.ts",
         "../node_modules/@types/node/async_hooks.d.ts",
         "../node_modules/@types/node/buffer.d.ts",
         "../node_modules/@types/node/child_process.d.ts",
@@ -3972,13 +3989,27 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@types/node/ts3.2/index.d.ts": [
+      "../node_modules/@types/node/ts3.2/base.d.ts": [
         "../node_modules/@types/node/base.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/ts3.2/globals.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@types/node/assert.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/node/ts3.2/index.d.ts": [
+        "../node_modules/@types/node/ts3.2/base.d.ts",
+        "../node_modules/@types/node/assert.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../node_modules/@nestjs/common/interfaces/external/kafka-options.interface.d.ts": [
         "../node_modules/@types/node/tls.d.ts",
@@ -7192,6 +7223,29 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../src/kickstarter/kickstarter.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/kickstarter/kickstarter.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/kickstarter/kickstarter.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/kickstarter/kickstarter.controller.ts",
+        "../src/kickstarter/kickstarter.service.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/config/database.config.ts": [
         "../node_modules/@nestjs/config/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
@@ -7207,6 +7261,7 @@
         "../node_modules/@nestjs/config/index.d.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
         "../src/user/user.module.ts",
+        "../src/kickstarter/kickstarter.module.ts",
         "../src/config/database.config.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -7535,6 +7590,21 @@
         "../node_modules/@nestjs/core/index.d.ts",
         "../src/app.module.ts",
         "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/kickstarter/kickstarter.entity.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/kickstarter/kickstarter.repository.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/kickstarter/kickstarter.entity.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -8900,12 +8970,6 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@types/node/assert.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "../node_modules/@types/node/async_hooks.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -9188,7 +9252,6 @@
       ],
       "../node_modules/@types/node/base.d.ts": [
         "../node_modules/@types/node/globals.d.ts",
-        "../node_modules/@types/node/assert.d.ts",
         "../node_modules/@types/node/async_hooks.d.ts",
         "../node_modules/@types/node/buffer.d.ts",
         "../node_modules/@types/node/child_process.d.ts",
@@ -9247,13 +9310,27 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@types/node/ts3.2/index.d.ts": [
+      "../node_modules/@types/node/ts3.2/base.d.ts": [
         "../node_modules/@types/node/base.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/ts3.2/globals.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/util.d.ts"
+      ],
+      "../node_modules/@types/node/assert.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/node/ts3.2/index.d.ts": [
+        "../node_modules/@types/node/ts3.2/base.d.ts",
+        "../node_modules/@types/node/assert.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../node_modules/@nestjs/common/interfaces/external/kafka-options.interface.d.ts": [
         "../node_modules/@types/node/tls.d.ts",
@@ -12719,6 +12796,13 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../src/kickstarter/kickstarter.entity.ts": [
+        "../node_modules/typeorm/index.d.ts"
+      ],
+      "../src/kickstarter/kickstarter.repository.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/kickstarter/kickstarter.entity.ts"
+      ],
       "../node_modules/@types/anymatch/index.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -13142,7 +13226,6 @@
       "../node_modules/@nestjs/common/interfaces/nest-application-context.interface.d.ts",
       "../node_modules/@nestjs/common/enums/transport.enum.d.ts",
       "../node_modules/@types/node/globals.d.ts",
-      "../node_modules/@types/node/assert.d.ts",
       "../node_modules/@types/node/async_hooks.d.ts",
       "../node_modules/@types/node/buffer.d.ts",
       "../node_modules/@types/node/child_process.d.ts",
@@ -13185,6 +13268,8 @@
       "../node_modules/@types/node/ts3.2/fs.d.ts",
       "../node_modules/@types/node/ts3.2/util.d.ts",
       "../node_modules/@types/node/ts3.2/globals.d.ts",
+      "../node_modules/@types/node/ts3.2/base.d.ts",
+      "../node_modules/@types/node/assert.d.ts",
       "../node_modules/@types/node/ts3.2/index.d.ts",
       "../node_modules/@nestjs/common/interfaces/external/kafka-options.interface.d.ts",
       "../node_modules/@nestjs/common/interfaces/external/mqtt-options.interface.d.ts",
@@ -13552,10 +13637,13 @@
       "../node_modules/@nestjs/typeorm/dist/index.d.ts",
       "../node_modules/@nestjs/typeorm/index.d.ts",
       "../src/user/user-insertion.dto.ts",
-      "../src/user/user.entity.ts",
       "../src/user/user.repository.ts",
       "../src/user/user.service.ts",
+      "../src/user/user.controller.ts",
       "../src/user/user.module.ts",
+      "../src/kickstarter/kickstarter.controller.ts",
+      "../src/kickstarter/kickstarter.service.ts",
+      "../src/kickstarter/kickstarter.module.ts",
       "../src/config/database.config.ts",
       "../src/app.module.ts",
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts",
@@ -13595,6 +13683,8 @@
       "../node_modules/@nestjs/core/services/index.d.ts",
       "../node_modules/@nestjs/core/index.d.ts",
       "../src/main.ts",
+      "../src/kickstarter/kickstarter.entity.ts",
+      "../src/kickstarter/kickstarter.repository.ts",
       "../node_modules/@types/anymatch/index.d.ts",
       "../node_modules/@babel/types/lib/index.d.ts",
       "../node_modules/@types/babel__generator/index.d.ts",
@@ -13634,7 +13724,7 @@
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
-      "../src/user/user.controller.ts"
+      "../src/user/user.entity.ts"
     ]
   },
   "version": "3.8.3"
