@@ -10,18 +10,24 @@
         cols="12"
         lg="4"
       >
-        <base-material-card>
-          <template>
-             <v-file-input accept=".csv" label="Select a Kickstarter csv File"></v-file-input>
-          </template>
-        </base-material-card>
+        <v-card shaped>
+          <v-card-actions>
+            <v-file-input
+              show-size accept=".csv"
+              label="Select a Kickstarter csv File"
+              v-model="file"
+            ></v-file-input>
+          </v-card-actions>
+          <v-card-actions>
+            <v-btn @click="onSubmitFile()">Submit file</v-btn>
+          </v-card-actions>
+        </v-card>
       </v-col>
 
       <v-col
         cols="12"
         lg="4"
       >
-
       </v-col>
     </v-row>
   </v-container>
@@ -34,16 +40,24 @@
 
     data () {
       return {
+        file: null,
       }
     },
 
     computed: {
     },
 
-    created () {
+    methods: {
+      ...mapActions('kickstarter', ['uploadFile']),
+
+      onSubmitFile(){
+        console.log("onSubmitFile -> this.file", this.file)
+        this.uploadFile(this.file);
+      }
     },
 
-    methods: {
+
+    created () {
     },
   }
 </script>

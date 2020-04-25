@@ -5,7 +5,6 @@ export class KickstarterController {
   @Post('upload')
   @UseInterceptors(FileInterceptor('file'))
   uploadFile(@UploadedFile() file) {
-  console.log(file);
-}
-
+    console.log(file);
+  }
 }

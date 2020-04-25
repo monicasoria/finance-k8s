@@ -15,11 +15,15 @@ const typeorm_1 = require("@nestjs/typeorm");
 const user_module_1 = require("./user/user.module");
 const kickstarter_module_1 = require("./kickstarter/kickstarter.module");
 const database_config_1 = require("./config/database.config");
+const platform_express_1 = require("@nestjs/platform-express");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     common_1.Module({
         imports: [
+            platform_express_1.MulterModule.register({
+                dest: "/upload",
+            }),
             config_1.ConfigModule.forRoot({
                 isGlobal: true,
                 load: [database_config_1.default]
