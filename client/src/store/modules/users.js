@@ -77,6 +77,4 @@ export default {
         .catch(error => console.log("updateUser -> error", error));
     },
   },
-
-
 }

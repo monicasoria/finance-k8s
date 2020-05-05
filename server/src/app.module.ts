@@ -1,4 +1,3 @@
-import { KickstarterModule } from "./kickstarter/kickstarter.module";
 import { Module } from "@nestjs/common";
 import { AppController } from "./app.controller";
 import { AppService } from "./app.service";
@@ -6,11 +5,15 @@ import { WorkerModule } from "./worker/worker.module";
 import { ConfigModule, ConfigService } from "@nestjs/config";
 import { TypeOrmModule } from "@nestjs/typeorm";
 import { UserModule } from './user/user.module';
+import { KickstarterModule } from './kickstarter/kickstarter.module';
 import databaseConfig from "./config/database.config";
+import { MulterModule } from "@nestjs/platform-express";
 @Module({
   imports: [
+    MulterModule.register({
+      dest: "/upload",
+    }),
     ConfigModule.forRoot({
-      // envFilePath: ".development.env",
       isGlobal: true,
       load: [databaseConfig]
     }),
@@ -24,13 +27,13 @@ import databaseConfig from "./config/database.config";
         password: configService.get<string>("database.password"),
         database: configService.get<string>("database.dbName"),
         entities: ["dist/**/*.entity{.ts,.js}"],
-        // synchronize: true
+        synchronize: true
       }),
       inject: [ConfigService]
     }),
     WorkerModule,
     UserModule,
-    KickstarterModule
+    KickstarterModule,
   ],
   controllers: [AppController],
   providers: [AppService]
