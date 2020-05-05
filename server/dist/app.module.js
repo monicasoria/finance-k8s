@@ -13,12 +13,17 @@ const worker_module_1 = require("./worker/worker.module");
 const config_1 = require("@nestjs/config");
 const typeorm_1 = require("@nestjs/typeorm");
 const user_module_1 = require("./user/user.module");
+const kickstarter_module_1 = require("./kickstarter/kickstarter.module");
 const database_config_1 = require("./config/database.config");
+const platform_express_1 = require("@nestjs/platform-express");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     common_1.Module({
         imports: [
+            platform_express_1.MulterModule.register({
+                dest: "/upload",
+            }),
             config_1.ConfigModule.forRoot({
                 isGlobal: true,
                 load: [database_config_1.default]
@@ -33,11 +38,13 @@ AppModule = __decorate([
                     password: configService.get("database.password"),
                     database: configService.get("database.dbName"),
                     entities: ["dist/**/*.entity{.ts,.js}"],
+                    synchronize: true
                 }),
                 inject: [config_1.ConfigService]
             }),
             worker_module_1.WorkerModule,
-            user_module_1.UserModule
+            user_module_1.UserModule,
+            kickstarter_module_1.KickstarterModule,
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService]
