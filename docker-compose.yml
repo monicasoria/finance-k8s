@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+
+    pgadmin:
+        container_name: 'pgadmin'
+        image: dpage/pgadmin4
+        environment:
+            PGADMIN_DEFAULT_EMAIL: "pgadmin4@pgadmin.org"
+            PGADMIN_DEFAULT_PASSWORD: "admin"
+        volumes:
+        - ./pgadmin:/root/.pgadmin
+        # - ./services-init/mariadb/:/docker-entrypoint-initdb.d
+        ports:
+            - "80:80"
+
+volumes:
+    pgadmin:

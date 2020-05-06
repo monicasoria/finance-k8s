@@ -27,7 +27,7 @@ import { MulterModule } from "@nestjs/platform-express";
         password: configService.get<string>("database.password"),
         database: configService.get<string>("database.dbName"),
         entities: ["dist/**/*.entity{.ts,.js}"],
-        // synchronize: true
+        synchronize: true
       }),
       inject: [ConfigService]
     }),
