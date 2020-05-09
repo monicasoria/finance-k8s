@@ -1,0 +1,61 @@
+version: "3.1"
+
+services:
+    postgres:
+        image: "postgres:latest"
+        restart: always
+        environment:
+            POSTGRES_USER: "${DATABASE_USER}"
+            POSTGRES_DB: "${DATABASE_NAME}"
+            POSTGRES_PASSWORD: "${DATABASE_PASSWORD}"
+        volumes:
+            - ./postgresql:/var/lib/postgresql/
+        ports:
+            - "5432:5432"
+
+    nginx:
+        restart: always
+        build:
+            dockerfile: Dockerfile.dev
+            context: ./nginx
+        ports:
+            - "3050:80"
+
+    api:
+        build:
+            dockerfile: Dockerfile.dev
+            context: ./server
+        volumes:
+            - /app/node_modules
+            - ./server:/app
+        environment:
+            - DATABASE_USER=${DATABASE_USER}
+            - DATABASE_HOST=${DATABASE_HOST}
+            - DATABASE_PORT=${DATABASE_PORT}
+            - DATABASE_NAME=${DATABASE_NAME}
+            - DATABASE_PASSWORD=${DATABASE_PASSWORD}
+
+    client:
+        build:
+            dockerfile: Dockerfile.dev
+            context: ./client
+        volumes:
+            - /app/node_modules
+            - ./client:/app
+
+    pgadmin:
+        container_name: 'pgadmin'
+        image: dpage/pgadmin4
+        environment:
+            PGADMIN_DEFAULT_EMAIL: "pgadmin4@pgadmin.org"
+            PGADMIN_DEFAULT_PASSWORD: "admin"
+        volumes:
+            - ./pgadmin:/root/.pgadmin
+        ports:
+            - "80:80"
+
+volumes:
+    pgadmin:
+
+
+  
