@@ -1,6 +1,5 @@
 from flask import Flask
 from flask import request
-import pandas as pd
 import numpy as np
 from pickle import load
 import tensorflow as tf
@@ -52,7 +51,8 @@ def kickstarter_predict():
     new_model = tf.keras.models.load_model('saved_model\kickstarter_v1')
     # Predict the input with the trained model
     prediction = new_model.predict(standardized_input_array)
-    return {"success_probability": prediction[0, 1]}
+    prediction_probability = round(np.float64(prediction[0, 1]), 2)*100
+    return {"success_probability": prediction_probability}
 
 
 def one_hot_encoding(raw_prediction_input, categorical_list, category_key):
