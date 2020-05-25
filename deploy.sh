@@ -1,4 +1,4 @@
-gcloud functions deploy kickstarter_predict --source ./finance_cfunction python37 --trigger-http
+gcloud functions deploy kickstarter_predict --source ./finance_cfunction --trigger-http --memory 2048
 
 docker build -t davidsantander/finance-k8s-client:latest -t davidsantander/finance-k8s-client:$SHA -f ./client/Dockerfile ./client
 docker build -t davidsantander/finance-k8s-server:latest -t davidsantander/finance-k8s-server:$SHA -f ./server/Dockerfile ./server
