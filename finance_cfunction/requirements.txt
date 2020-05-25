@@ -4,4 +4,4 @@ flask_cors
 flask
 numpy
 tensorflow
-
+  

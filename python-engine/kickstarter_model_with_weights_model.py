@@ -1,5 +1,3 @@
-# How to run a Model using Cloud Functions:
-# https://cloud.google.com/blog/products/ai-machine-learning/how-to-serve-deep-learning-models-using-tensorflow-2-0-with-cloud-functions
 import numpy
 import tensorflow
 from google.cloud import storage
@@ -7,7 +5,6 @@ from tensorflow.keras.layers import Dense
 from tensorflow.keras import Model
 from pickle import load
 import os
-from flask import request
 
 # We keep model as global variable so we don't have to reload it in case of warm invocations
 kickstarter_model = None
@@ -27,7 +24,6 @@ class CustomModel(Model):
 
 
 def download_blob(bucket_name, source_blob_name, destination_file_name):
-    print('Downloading')
     """Downloads a blob from the bucket."""
     storage_client = storage.Client()
     bucket = storage_client.get_bucket(bucket_name)
@@ -50,7 +46,7 @@ def one_hot_encoding(raw_prediction_input, categorical_list, category_key):
     return raw_prediction_input
 
 
-def kickstarter_predict():
+def handler(request):
     global kickstarter_model
     # Define in a list the categories for prediction dictionary
     country_categories = ['country_GB', 'country_Other', 'country_US']
@@ -74,7 +70,6 @@ def kickstarter_predict():
     # Scaler load
     download_blob('finance-model-bucket', 'sklearn/scaler_kickstarter_v1.pkl',
                   '/tmp/scaler_kickstarter_v1.pkl')
-    print('Scaler downloaded')
     # Model load which only happens during cold starts
     if kickstarter_model is None:
         download_blob('finance-model-bucket', 'tensorflow/kickstarter_v1_weights.index.index',

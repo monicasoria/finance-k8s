@@ -1,5 +1,3 @@
-# How to run a Model using Cloud Functions:
-# https://cloud.google.com/blog/products/ai-machine-learning/how-to-serve-deep-learning-models-using-tensorflow-2-0-with-cloud-functions
 import numpy
 import tensorflow
 from google.cloud import storage
@@ -7,7 +5,10 @@ from tensorflow.keras.layers import Dense
 from tensorflow.keras import Model
 from pickle import load
 import os
+from flask import Flask
 from flask import request
+
+app = Flask(__name__)
 
 # We keep model as global variable so we don't have to reload it in case of warm invocations
 kickstarter_model = None
@@ -50,6 +51,7 @@ def one_hot_encoding(raw_prediction_input, categorical_list, category_key):
     return raw_prediction_input
 
 
+@app.route('/predict', methods=['POST'])
 def kickstarter_predict():
     global kickstarter_model
     # Define in a list the categories for prediction dictionary
