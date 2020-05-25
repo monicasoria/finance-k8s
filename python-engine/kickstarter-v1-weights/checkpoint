@@ -1,0 +1,2 @@
+model_checkpoint_path: "kickstarter_v1_weights"
+all_model_checkpoint_paths: "kickstarter_v1_weights"

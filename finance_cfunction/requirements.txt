@@ -1,3 +1,9 @@
-google-cloud-storage==1.26.0
-xmltodict==0.12.0
-flask_cors
+# Function dependencies, for example:
+# package>=version
+tensorflow==2.0.0b0
+google-cloud-storage==1.16.1
+Pillow==6.0.0
+numpy
+scikit-learn
+scipy
+  
