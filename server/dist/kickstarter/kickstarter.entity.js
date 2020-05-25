@@ -17,59 +17,59 @@ __decorate([
     __metadata("design:type", Number)
 ], Kickstarter.prototype, "id", void 0);
 __decorate([
-    typeorm_1.Column({ name: "name", type: "varchar" }),
+    typeorm_1.Column({ name: "name", type: "varchar", nullable: true }),
     __metadata("design:type", String)
 ], Kickstarter.prototype, "name", void 0);
 __decorate([
-    typeorm_1.Column({ name: "category", type: "varchar" }),
+    typeorm_1.Column({ name: "category", type: "varchar", nullable: true }),
     __metadata("design:type", String)
 ], Kickstarter.prototype, "category", void 0);
 __decorate([
-    typeorm_1.Column({ name: "main_category", type: "varchar" }),
+    typeorm_1.Column({ name: "main_category", type: "varchar", nullable: true }),
     __metadata("design:type", String)
 ], Kickstarter.prototype, "mainCategory", void 0);
 __decorate([
-    typeorm_1.Column({ name: "currency", type: "varchar" }),
+    typeorm_1.Column({ name: "currency", type: "varchar", nullable: true }),
     __metadata("design:type", String)
 ], Kickstarter.prototype, "currency", void 0);
 __decorate([
-    typeorm_1.Column({ name: "deadline", type: "date" }),
+    typeorm_1.Column({ name: "deadline", type: "date", nullable: true }),
     __metadata("design:type", Date)
 ], Kickstarter.prototype, "deadline", void 0);
 __decorate([
-    typeorm_1.Column({ name: "goal", type: "float" }),
+    typeorm_1.Column({ name: "goal", type: "float", nullable: true }),
     __metadata("design:type", Number)
 ], Kickstarter.prototype, "goal", void 0);
 __decorate([
-    typeorm_1.Column({ name: "launched", type: "date" }),
+    typeorm_1.Column({ name: "launched", type: "date", nullable: true }),
     __metadata("design:type", Date)
 ], Kickstarter.prototype, "launched", void 0);
 __decorate([
-    typeorm_1.Column({ name: "pledged", type: "float" }),
+    typeorm_1.Column({ name: "pledged", type: "float", nullable: true }),
     __metadata("design:type", Number)
 ], Kickstarter.prototype, "pledged", void 0);
 __decorate([
-    typeorm_1.Column({ name: "state", type: "varchar" }),
+    typeorm_1.Column({ name: "state", type: "varchar", nullable: true }),
     __metadata("design:type", String)
 ], Kickstarter.prototype, "state", void 0);
 __decorate([
-    typeorm_1.Column({ name: "backers", type: "int" }),
+    typeorm_1.Column({ name: "backers", type: "int", nullable: true }),
     __metadata("design:type", Number)
 ], Kickstarter.prototype, "backers", void 0);
 __decorate([
-    typeorm_1.Column({ name: "country", type: "varchar" }),
+    typeorm_1.Column({ name: "country", type: "varchar", nullable: true }),
     __metadata("design:type", String)
 ], Kickstarter.prototype, "country", void 0);
 __decorate([
-    typeorm_1.Column({ name: "usd_pledged", type: "float" }),
+    typeorm_1.Column({ name: "usd_pledged", type: "float", nullable: true }),
     __metadata("design:type", Number)
 ], Kickstarter.prototype, "usdPledged", void 0);
 __decorate([
-    typeorm_1.Column({ name: "usd_pledged_real", type: "float" }),
+    typeorm_1.Column({ name: "usd_pledged_real", type: "float", nullable: true }),
     __metadata("design:type", Number)
 ], Kickstarter.prototype, "usdPledgedReal", void 0);
 __decorate([
-    typeorm_1.Column({ name: "usd_goal_real", type: "float" }),
+    typeorm_1.Column({ name: "usd_goal_real", type: "float", nullable: true }),
     __metadata("design:type", Number)
 ], Kickstarter.prototype, "usdGoalReal", void 0);
 Kickstarter = __decorate([
