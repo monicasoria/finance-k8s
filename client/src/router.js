@@ -19,6 +19,11 @@ export default new Router({
         },
         // Pages
         {
+          name: 'Machine Learning',
+          path: 'pages/machine-learning',
+          component: () => import('@/views/dashboard/pages/MachineLearning'),
+        },
+        {
           name: 'User Profile',
           path: 'pages/user',
           component: () => import('@/views/dashboard/pages/UserProfile'),

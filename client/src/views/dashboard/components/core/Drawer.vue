@@ -18,8 +18,6 @@
       />
     </template>
 
-    <v-divider class="mb-1" />
-
     <v-list
       dense
       nav
@@ -97,16 +95,21 @@
     data: () => ({
       items: [
         {
-          icon: 'mdi-view-dashboard',
-          title: 'dashboard',
+          icon: 'mdi-chart-areaspline',
+          title: 'Statistical Insights',
           to: '/',
+        },
+        {
+          icon: 'mdi-robot',
+          title: 'Machine Learning',
+          to: '/pages/machine-learning',
         },
         {
           icon: 'mdi-account',
           title: 'user',
           to: '/pages/user',
         },
-                {
+        {
           icon: 'mdi-account',
           title: 'Users',
           to: '/pages/users',

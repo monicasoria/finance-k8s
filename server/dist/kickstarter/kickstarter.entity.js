@@ -73,7 +73,7 @@ __decorate([
     __metadata("design:type", Number)
 ], Kickstarter.prototype, "usdGoalReal", void 0);
 Kickstarter = __decorate([
-    typeorm_1.Entity()
+    typeorm_1.Entity('Kickstarter')
 ], Kickstarter);
 exports.Kickstarter = Kickstarter;
 //# sourceMappingURL=kickstarter.entity.js.map
