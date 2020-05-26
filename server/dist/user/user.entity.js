@@ -29,7 +29,7 @@ __decorate([
     __metadata("design:type", Boolean)
 ], User.prototype, "isActive", void 0);
 User = __decorate([
-    typeorm_1.Entity()
+    typeorm_1.Entity('User')
 ], User);
 exports.User = User;
 //# sourceMappingURL=user.entity.js.map

@@ -9,7 +9,7 @@ async function bootstrap() {
     app.enableCors();
     const port = 5000;
     await app.listen(5000);
-    logger.log(`Application listening on port ${port}`);
+    logger.log(`Application listening on port: ${port}`);
 }
 bootstrap();
 //# sourceMappingURL=main.js.map
