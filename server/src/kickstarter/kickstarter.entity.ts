@@ -5,7 +5,7 @@ import {
   PrimaryColumn
 } from "typeorm";
 
-@Entity()
+@Entity('Kickstarter')
 export class Kickstarter extends BaseEntity {
   @PrimaryColumn({ name: "ID", type: "int" })
   id: number;

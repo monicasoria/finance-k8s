@@ -40,6 +40,23 @@ def create_model():
 
 
 def kickstarter_predict(request):
+        # Set CORS headers for preflight requests
+    if request.method == 'OPTIONS':
+        # Allows GET requests from origin https://mydomain.com with
+        # Authorization header
+        headers = {
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'GET, POST',
+            'Access-Control-Allow-Headers': 'Content-Type',
+            'Access-Control-Max-Age': '3600',
+        }
+        return ('', 204, headers)
+    # Set CORS headers for main requests
+    headers = {
+        'Content-Type':'application/json',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': 'Content-Type',
+    }
     request_json = request.get_json(silent=True)
     # Define in a list the categories for prediction dictionary
     country_categories = ['country_GB', 'country_Other', 'country_US']
@@ -93,4 +110,4 @@ def kickstarter_predict(request):
     result = {
         "prediction_probability": prediction_probability
     }
-    return jsonify(result)
+    return (jsonify(result), 200, headers)
